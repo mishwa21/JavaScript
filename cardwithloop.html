@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .col{
+            text-align: center;
+            box-shadow: 1px 2px 3px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <img src="product2.jpeg" alt="">
+            <h2>Product data</h2>
+            <p>Rs. 1500</p>
+            <button>Add to cart</button>
+        </div>
+    </div>
+
+    <script>
+        let row = document.querySelector(".row")
+        x = ""
+        for(i=1;i<=10;i++){
+            x=x +'<div class="col"><img src="product2.jpeg" alt=""><h2>Product data</h2><p>Rs. 1500</p><button>Add to cart</button></div>'
+        }
+        row.innerHTML=x
+    </script>
+</body>
+</html>
